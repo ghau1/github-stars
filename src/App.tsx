@@ -6,9 +6,10 @@ import {
   InMemoryCache,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import { Header } from 'antd/lib/layout/layout';
+import { Content, Header } from 'antd/lib/layout/layout';
 
 import './App.css';
+import StarsTable from './components/StarsTable';
 
 const httpLink = createHttpLink({
   uri: 'https://api.github.com/graphql',
@@ -37,6 +38,9 @@ function App() {
           Github Stars
         </h1>
       </Header>
+      <Content>
+        <StarsTable />
+      </Content>
     </ApolloProvider>
   );
 }

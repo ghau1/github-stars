@@ -9,4 +9,10 @@ describe("Appearance of page elements", () => {
     const headerTitle = screen.getByText(/Github Stars/);
     expect(headerTitle).toBeInTheDocument();
   });
+
+  test('renders stars table', () => {
+    render(<App />);
+    const starsTable = screen.getByTestId(/stars-table/);
+    expect(starsTable).toBeInTheDocument();
+  });
 });
