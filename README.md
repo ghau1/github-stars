@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Github Stars Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To get started, please follow these steps:
+
+- Log into Github and generate a Personal Access Token (Settings -> Developer Settings -> Personal access tokens)
+- Copy `.env.example` to a file called `.env` in the root of the project
+- in the new `.env` file, replace 'your_token_here' with your Github personal access token
+- Install the dependencies by running `yarn`
+- Start the app by running `yarn start`
 
 ## Available Scripts
 
